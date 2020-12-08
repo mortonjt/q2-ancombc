@@ -62,7 +62,6 @@ def ancombc(table: pd.DataFrame,
         table.to_csv(biom_fp, sep='\t', header=True)
         taxonomy.to_csv(taxa_fp, sep='\t', header=True)
         meta.to_csv(meta_fp, sep='\t', header=True)
-        print('python', biom_fp)
         cmd = ['run_ancombc.R',
                biom_fp,       # inp.abundances.path
                taxa_fp,       # inp.taxonomy.path
