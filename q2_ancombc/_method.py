@@ -31,7 +31,7 @@ def ancombc(table: pd.DataFrame,
             p_adj_method : str = "holm",
             zero_cut : float = 0.90,
             lib_cut : int = 1000,
-            group : str = "nation",
+            group : str = None,
             struc_zero : bool = True,
             neg_lb : bool = True,
             tol : float = 1e-5,
@@ -55,13 +55,16 @@ def ancombc(table: pd.DataFrame,
         taxa_fp = os.path.join(temp_dir_name, 'taxonomy.tsv')
         meta_fp = os.path.join(temp_dir_name, 'input.map.txt')
         summary_fp = os.path.join(temp_dir_name, 'output.summary.txt')
-
         # Need to manually specify header=True for Series (i.e. "meta"). It's
         # already the default for DataFrames (i.e. "table"), but we manually
         # specify it here anyway to alleviate any potential confusion.
         table.to_csv(biom_fp, sep='\t', header=True)
         taxonomy.to_csv(taxa_fp, sep='\t', header=True)
         meta.to_csv(meta_fp, sep='\t', header=True)
+
+        if group is None:
+            group = formula
+
         cmd = ['run_ancombc.R',
                biom_fp,       # inp.abundances.path
                taxa_fp,       # inp.taxonomy.path

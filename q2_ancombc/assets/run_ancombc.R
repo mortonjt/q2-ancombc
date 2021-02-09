@@ -35,8 +35,10 @@ OTU <- otu_table(otu.file, taxa_are_rows = TRUE)
 TAX <- tax_table(taxonomy.file)
 MD <- sample_data(metadata.file)
 row.names(TAX) <- rownames(taxonomy.file) # wtf phyloseq...
+row.names(MD) <- rownames(metadata.file)
+
 data <- phyloseq(OTU, TAX, MD)
-print(data)
+
 # analysis ----------------------------------------------------------------
 fit = ancombc(data, formula, p_adj_method,
               zero_cut, lib_cut, group, struc_zero, neg_lb,
