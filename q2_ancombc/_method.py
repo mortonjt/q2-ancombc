@@ -17,10 +17,10 @@ def run_commands(cmds, verbose=True):
             print("\nCommand:", end=' ')
             print(" ".join(cmd), end='\n\n')
         proc = subprocess.run(cmd, check=True)
-
-        for line in iter(proc.stdout.readline,''):
-            if 'global_test' in line:
-                return float(line.split(' ')[1])
+        # TODO: need to get global test at some point
+        # for line in iter(proc.stdout.readline,''):
+        #     if 'global_test' in line:
+        #         return float(line.split(' ')[1])
 
 
 # TODO: may want a better name ...

@@ -138,8 +138,7 @@ class TestAncombc(unittest.TestCase):
         taxa = pd.DataFrame(np.arange(len(table.columns)), index=table.columns)
         # TODO : allow for summary type
         diff = ancombc(table, metadata, taxa, formula='labels')
-
-        res = pearsonr(diff.values.ravel(),
+        res = pearsonr(diff['beta'].values.ravel(),
                        ground_truth.categorical.values.ravel())
 
         # test to see if there is a tight correlation

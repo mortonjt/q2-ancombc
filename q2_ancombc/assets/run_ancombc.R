@@ -1,8 +1,6 @@
 #!/usr/bin/env Rscript
-
 # load arguments ---------------------------------------------------------
 cat(R.version$version.string, "\n")
-
 args <- commandArgs(TRUE)
 
 
@@ -36,14 +34,12 @@ TAX <- tax_table(taxonomy.file)
 MD <- sample_data(metadata.file)
 row.names(TAX) <- rownames(taxonomy.file) # wtf phyloseq...
 row.names(MD) <- rownames(metadata.file)
-
 data <- phyloseq(OTU, TAX, MD)
-
 # analysis ----------------------------------------------------------------
 fit = ancombc(data, formula, p_adj_method,
               zero_cut, lib_cut, group, struc_zero, neg_lb,
               tol, max_iter, conserve, alpha, global)
-
-sfit <- as.data.frame(fit)
-print(paste("global_test", fit$res_global, "\n"))
-write.csv(sfit$res, file=output)
+diffs = as.data.frame(fit$res)
+colnames(diffs) <- c('beta', 'se', 'W', 'p_val', 'q_val', 'diff_abn')
+# print(paste("global_test", fit$res_global, "\n"))
+write.csv(diffs, file=output)
