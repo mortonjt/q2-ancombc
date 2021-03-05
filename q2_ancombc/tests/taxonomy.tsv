@@ -1,201 +1,201 @@
-	0
-F0	0
-F1	1
-F2	2
-F3	3
-F4	4
-F5	5
-F6	6
-F7	7
-F8	8
-F9	9
-F10	10
-F11	11
-F12	12
-F13	13
-F14	14
-F15	15
-F16	16
-F17	17
-F18	18
-F19	19
-F20	20
-F21	21
-F22	22
-F23	23
-F24	24
-F25	25
-F26	26
-F27	27
-F28	28
-F29	29
-F30	30
-F31	31
-F32	32
-F33	33
-F34	34
-F35	35
-F36	36
-F37	37
-F38	38
-F39	39
-F40	40
-F41	41
-F42	42
-F43	43
-F44	44
-F45	45
-F46	46
-F47	47
-F48	48
-F49	49
-F50	50
-F51	51
-F52	52
-F53	53
-F54	54
-F55	55
-F56	56
-F57	57
-F58	58
-F59	59
-F60	60
-F61	61
-F62	62
-F63	63
-F64	64
-F65	65
-F66	66
-F67	67
-F68	68
-F69	69
-F70	70
-F71	71
-F72	72
-F73	73
-F74	74
-F75	75
-F76	76
-F77	77
-F78	78
-F79	79
-F80	80
-F81	81
-F82	82
-F83	83
-F84	84
-F85	85
-F86	86
-F87	87
-F88	88
-F89	89
-F90	90
-F91	91
-F92	92
-F93	93
-F94	94
-F95	95
-F96	96
-F97	97
-F98	98
-F99	99
-F100	100
-F101	101
-F102	102
-F103	103
-F104	104
-F105	105
-F106	106
-F107	107
-F108	108
-F109	109
-F110	110
-F111	111
-F112	112
-F113	113
-F114	114
-F115	115
-F116	116
-F117	117
-F118	118
-F119	119
-F120	120
-F121	121
-F122	122
-F123	123
-F124	124
-F125	125
-F126	126
-F127	127
-F128	128
-F129	129
-F130	130
-F131	131
-F132	132
-F133	133
-F134	134
-F135	135
-F136	136
-F137	137
-F138	138
-F139	139
-F140	140
-F141	141
-F142	142
-F143	143
-F144	144
-F145	145
-F146	146
-F147	147
-F148	148
-F149	149
-F150	150
-F151	151
-F152	152
-F153	153
-F154	154
-F155	155
-F156	156
-F157	157
-F158	158
-F159	159
-F160	160
-F161	161
-F162	162
-F163	163
-F164	164
-F165	165
-F166	166
-F167	167
-F168	168
-F169	169
-F170	170
-F171	171
-F172	172
-F173	173
-F174	174
-F175	175
-F176	176
-F177	177
-F178	178
-F179	179
-F180	180
-F181	181
-F182	182
-F183	183
-F184	184
-F185	185
-F186	186
-F187	187
-F188	188
-F189	189
-F190	190
-F191	191
-F192	192
-F193	193
-F194	194
-F195	195
-F196	196
-F197	197
-F198	198
-F199	199
+Feature ID	Taxon	Confidence
+F0	p__Firmicutes	-1
+F1	p__Firmicutes	-1
+F2	p__Firmicutes	-1
+F3	p__Firmicutes	-1
+F4	p__Firmicutes	-1
+F5	p__Firmicutes	-1
+F6	p__Firmicutes	-1
+F7	p__Firmicutes	-1
+F8	p__Firmicutes	-1
+F9	p__Firmicutes	-1
+F10	p__Firmicutes	-1
+F11	p__Firmicutes	-1
+F12	p__Firmicutes	-1
+F13	p__Firmicutes	-1
+F14	p__Firmicutes	-1
+F15	p__Firmicutes	-1
+F16	p__Firmicutes	-1
+F17	p__Firmicutes	-1
+F18	p__Firmicutes	-1
+F19	p__Firmicutes	-1
+F20	p__Firmicutes	-1
+F21	p__Firmicutes	-1
+F22	p__Firmicutes	-1
+F23	p__Firmicutes	-1
+F24	p__Firmicutes	-1
+F25	p__Firmicutes	-1
+F26	p__Firmicutes	-1
+F27	p__Firmicutes	-1
+F28	p__Firmicutes	-1
+F29	p__Firmicutes	-1
+F30	p__Firmicutes	-1
+F31	p__Firmicutes	-1
+F32	p__Firmicutes	-1
+F33	p__Firmicutes	-1
+F34	p__Firmicutes	-1
+F35	p__Firmicutes	-1
+F36	p__Firmicutes	-1
+F37	p__Firmicutes	-1
+F38	p__Firmicutes	-1
+F39	p__Firmicutes	-1
+F40	p__Firmicutes	-1
+F41	p__Firmicutes	-1
+F42	p__Firmicutes	-1
+F43	p__Firmicutes	-1
+F44	p__Firmicutes	-1
+F45	p__Firmicutes	-1
+F46	p__Firmicutes	-1
+F47	p__Firmicutes	-1
+F48	p__Firmicutes	-1
+F49	p__Firmicutes	-1
+F50	p__Firmicutes	-1
+F51	p__Firmicutes	-1
+F52	p__Firmicutes	-1
+F53	p__Firmicutes	-1
+F54	p__Firmicutes	-1
+F55	p__Firmicutes	-1
+F56	p__Firmicutes	-1
+F57	p__Firmicutes	-1
+F58	p__Firmicutes	-1
+F59	p__Firmicutes	-1
+F60	p__Firmicutes	-1
+F61	p__Firmicutes	-1
+F62	p__Firmicutes	-1
+F63	p__Firmicutes	-1
+F64	p__Firmicutes	-1
+F65	p__Firmicutes	-1
+F66	p__Firmicutes	-1
+F67	p__Firmicutes	-1
+F68	p__Firmicutes	-1
+F69	p__Firmicutes	-1
+F70	p__Firmicutes	-1
+F71	p__Firmicutes	-1
+F72	p__Firmicutes	-1
+F73	p__Firmicutes	-1
+F74	p__Firmicutes	-1
+F75	p__Firmicutes	-1
+F76	p__Firmicutes	-1
+F77	p__Firmicutes	-1
+F78	p__Firmicutes	-1
+F79	p__Firmicutes	-1
+F80	p__Firmicutes	-1
+F81	p__Firmicutes	-1
+F82	p__Firmicutes	-1
+F83	p__Firmicutes	-1
+F84	p__Firmicutes	-1
+F85	p__Firmicutes	-1
+F86	p__Firmicutes	-1
+F87	p__Firmicutes	-1
+F88	p__Firmicutes	-1
+F89	p__Firmicutes	-1
+F90	p__Firmicutes	-1
+F91	p__Firmicutes	-1
+F92	p__Firmicutes	-1
+F93	p__Firmicutes	-1
+F94	p__Firmicutes	-1
+F95	p__Firmicutes	-1
+F96	p__Firmicutes	-1
+F97	p__Firmicutes	-1
+F98	p__Firmicutes	-1
+F99	p__Firmicutes	-1
+F100	p__Firmicutes	-1
+F101	p__Firmicutes	-1
+F102	p__Firmicutes	-1
+F103	p__Firmicutes	-1
+F104	p__Firmicutes	-1
+F105	p__Firmicutes	-1
+F106	p__Firmicutes	-1
+F107	p__Firmicutes	-1
+F108	p__Firmicutes	-1
+F109	p__Firmicutes	-1
+F110	p__Firmicutes	-1
+F111	p__Firmicutes	-1
+F112	p__Firmicutes	-1
+F113	p__Firmicutes	-1
+F114	p__Firmicutes	-1
+F115	p__Firmicutes	-1
+F116	p__Firmicutes	-1
+F117	p__Firmicutes	-1
+F118	p__Firmicutes	-1
+F119	p__Firmicutes	-1
+F120	p__Firmicutes	-1
+F121	p__Firmicutes	-1
+F122	p__Firmicutes	-1
+F123	p__Firmicutes	-1
+F124	p__Firmicutes	-1
+F125	p__Firmicutes	-1
+F126	p__Firmicutes	-1
+F127	p__Firmicutes	-1
+F128	p__Firmicutes	-1
+F129	p__Firmicutes	-1
+F130	p__Firmicutes	-1
+F131	p__Firmicutes	-1
+F132	p__Firmicutes	-1
+F133	p__Firmicutes	-1
+F134	p__Firmicutes	-1
+F135	p__Firmicutes	-1
+F136	p__Firmicutes	-1
+F137	p__Firmicutes	-1
+F138	p__Firmicutes	-1
+F139	p__Firmicutes	-1
+F140	p__Firmicutes	-1
+F141	p__Firmicutes	-1
+F142	p__Firmicutes	-1
+F143	p__Firmicutes	-1
+F144	p__Firmicutes	-1
+F145	p__Firmicutes	-1
+F146	p__Firmicutes	-1
+F147	p__Firmicutes	-1
+F148	p__Firmicutes	-1
+F149	p__Firmicutes	-1
+F150	p__Firmicutes	-1
+F151	p__Firmicutes	-1
+F152	p__Firmicutes	-1
+F153	p__Firmicutes	-1
+F154	p__Firmicutes	-1
+F155	p__Firmicutes	-1
+F156	p__Firmicutes	-1
+F157	p__Firmicutes	-1
+F158	p__Firmicutes	-1
+F159	p__Firmicutes	-1
+F160	p__Firmicutes	-1
+F161	p__Firmicutes	-1
+F162	p__Firmicutes	-1
+F163	p__Firmicutes	-1
+F164	p__Firmicutes	-1
+F165	p__Firmicutes	-1
+F166	p__Firmicutes	-1
+F167	p__Firmicutes	-1
+F168	p__Firmicutes	-1
+F169	p__Firmicutes	-1
+F170	p__Firmicutes	-1
+F171	p__Firmicutes	-1
+F172	p__Firmicutes	-1
+F173	p__Firmicutes	-1
+F174	p__Firmicutes	-1
+F175	p__Firmicutes	-1
+F176	p__Firmicutes	-1
+F177	p__Firmicutes	-1
+F178	p__Firmicutes	-1
+F179	p__Firmicutes	-1
+F180	p__Firmicutes	-1
+F181	p__Firmicutes	-1
+F182	p__Firmicutes	-1
+F183	p__Firmicutes	-1
+F184	p__Firmicutes	-1
+F185	p__Firmicutes	-1
+F186	p__Firmicutes	-1
+F187	p__Firmicutes	-1
+F188	p__Firmicutes	-1
+F189	p__Firmicutes	-1
+F190	p__Firmicutes	-1
+F191	p__Firmicutes	-1
+F192	p__Firmicutes	-1
+F193	p__Firmicutes	-1
+F194	p__Firmicutes	-1
+F195	p__Firmicutes	-1
+F196	p__Firmicutes	-1
+F197	p__Firmicutes	-1
+F198	p__Firmicutes	-1
+F199	p__Firmicutes	-1

@@ -3,6 +3,7 @@ import qiime2
 import pandas as pd
 import tempfile
 import subprocess
+import numpy as np
 
 
 def run_commands(cmds, verbose=True):
@@ -95,6 +96,6 @@ def ancombc(table: pd.DataFrame,
                             " and stderr to learn more." % e.returncode)
 
         summary = pd.read_csv(summary_fp, index_col=0)
-
+        del summary['diff_abn']  # remove this field for now ...
         summary.index.name = "featureid"
         return summary
