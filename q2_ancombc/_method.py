@@ -31,7 +31,7 @@ def ancombc(table: pd.DataFrame,
             formula : str,
             p_adj_method : str = "holm",
             zero_cut : float = 0.90,
-            min_sample_depth : int = 1000,
+            lib_cut : int = 1000,
             group : str = None,
             struc_zero : bool = True,
             neg_lb : bool = True,
@@ -68,14 +68,14 @@ def ancombc(table: pd.DataFrame,
             group = formula
 
         cmd = ['run_ancombc.R',
-               biom_fp,       # inp.abundances.path
-               taxa_fp,       # inp.taxonomy.path
-               meta_fp,       # inp.metadata.path
-               formula,       # formula
-               p_adj_method,  # p_adj_method
-               zero_cut,      # zero_cut
-               lib_cut,       # lib_cut
-               group,         # group
+               biom_fp,                 # inp.abundances.path
+               taxa_fp,                 # inp.taxonomy.path
+               meta_fp,                 # inp.metadata.path
+               formula,                 # formula
+               p_adj_method,            # p_adj_method
+               zero_cut,                # zero_cut
+               lib_cut,        # lib_cut
+               group,                   # group
                str(struc_zero).upper(),    # struc_zero
                str(neg_lb).upper(),        # neg_lb
                tol,                        # tol

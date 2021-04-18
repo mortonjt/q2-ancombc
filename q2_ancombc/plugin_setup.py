@@ -56,7 +56,7 @@ plugin.methods.register_function(
                'zero_cut': ('A parameter for filtering zeros. Features with a'
                             ' proportion of zeros greater than 0 cut will be '
                             'excluded from the analysis.'),
-               'min_sample_depth': ('the minimum sequencing depth to retain a'
+               'lib_cut': ('the minimum sequencing depth to retain a'
                                     ' sample for testing'),
                'group': ('The grouping variable in the metadata. Required '
                          'for zero detection'),
