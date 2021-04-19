@@ -29,17 +29,20 @@ plugin.methods.register_function(
             'taxonomy' : FeatureData[Taxonomy]},
     parameters={'metadata' : Metadata,
                 'formula' : Str,
-                'p_adj_method' : Str % Choices(['holm']),
+                'p_adj_method' : Str % Choices(['holm', 'hochberg', 'hommel', 
+                                                'bonferroni', "BH", "BY", 
+                                                "fdr", "none"]),
                 'zero_cut' : Float,
                 'lib_cut' : Int,
-                'group' : Str % Choices(['nation']),
+                'group' : Str,
                 'struc_zero' : Bool,
                 'neg_lb' : Bool,
                 'tol' : Float,
                 'max_iter' : Int,
                 'conserve' : Bool,
                 'alpha' : Float,
-                'global_test' : Bool},
+                # 'global_test' : Bool
+                },
     outputs=[('differentials', FeatureData[Differential])],
     input_descriptions={
         'table': 'The feature table of abundances',
@@ -47,20 +50,40 @@ plugin.methods.register_function(
     },
     parameter_descriptions={
                'metadata': 'Sample Metadata path.',
-               'formula':  'Regression formula to specify experimental conditions',
-               'p_adj_method': '?',
-               'zero_cut': '?',
-               'lib_cut': '?',
-               'group': '?',
-               'struc_zero': '?',
-               'neg_lb': '?',
-               'tol': '?',
-               'max_iter': '?',
-               'conserve': '?',
-               'alpha': '?',
-               'global_test': '?'
+               'formula':  ('One sided R-style regression formula to specify '
+                            'experimental conditions'),
+               'p_adj_method': 'The method for p-adjustment.',
+               'zero_cut': ('A parameter for filtering zeros. Features with a'
+                            ' proportion of zeros greater than 0 cut will be '
+                            'excluded from the analysis.'),
+               'lib_cut': ('the minimum sequencing depth to retain a'
+                                    ' sample for testing'),
+               'group': ('The grouping variable in the metadata. Required '
+                         'for zero detection'),
+               'struc_zero': ('Wether or not to detect structural zeros. '
+                              'These are zeros that are biologically expected'
+                              ' to be detected in one group but not another. '
+                              'When detected, these taxa will be excluded '
+                              'from further analysis. See Kual et al '
+                              '(doi 10.3389/fmicb.2017.02114) for more '
+                              'details.'),
+               'neg_lb': ('Whether groups should be classified as structural'
+                          ' zeros in the corresponding study group based on '
+                          'an asymptotic lower bound.'),
+               'tol': ('The convergence tolerance for the parameter '
+                       'estimation algorithm'),
+               'max_iter': ('The maximum number of iterations allowed '
+                            'during parameter estimation optimizataion'),
+               'conserve': ('When True, a conservative variance estimate will'
+                            ' used for the test statitics. This should be '
+                            'used when the sample size is small and/or the '
+                            'number of differenitally abundant taxa is '
+                            'believed to be large.'),
+               'alpha': ('The level of significance in the multiple '
+                         'hypothesis test'),
+               # 'global_test': ''
     },
     output_descriptions={
-        'differentials': 'The estimated per-feature differentials'
+        'differentials': 'The estimated per-feature differentials.'
     }
 )

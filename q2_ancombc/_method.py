@@ -39,7 +39,8 @@ def ancombc(table: pd.DataFrame,
             max_iter : int = 100,
             conserve : bool = True,
             alpha : float = 0.05,
-            global_test : bool = True) -> pd.DataFrame:
+            # global_test : bool = True
+            ) -> pd.DataFrame:
 
     # create series from the metadata column
     meta = metadata.to_dataframe()
@@ -67,21 +68,22 @@ def ancombc(table: pd.DataFrame,
             group = formula
 
         cmd = ['run_ancombc.R',
-               biom_fp,       # inp.abundances.path
-               taxa_fp,       # inp.taxonomy.path
-               meta_fp,       # inp.metadata.path
-               formula,       # formula
-               p_adj_method,  # p_adj_method
-               zero_cut,      # zero_cut
-               lib_cut,       # lib_cut
-               group,         # group
+               biom_fp,                 # inp.abundances.path
+               taxa_fp,                 # inp.taxonomy.path
+               meta_fp,                 # inp.metadata.path
+               formula,                 # formula
+               p_adj_method,            # p_adj_method
+               zero_cut,                # zero_cut
+               lib_cut,        # lib_cut
+               group,                   # group
                str(struc_zero).upper(),    # struc_zero
                str(neg_lb).upper(),        # neg_lb
                tol,                        # tol
                max_iter,                   # max_iter
                str(conserve).upper(),      # conserve
                alpha,                      # alpha
-               str(global_test).upper(),   # global
+               'FALSE',                      # global -- temporary better understood
+               # str(global_test).upper(),   # global
                summary_fp                  # output
         ]
         cmd = list(map(str, cmd))
