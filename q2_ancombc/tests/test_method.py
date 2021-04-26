@@ -137,8 +137,8 @@ class TestAncombc(unittest.TestCase):
         # make up some taxonomy
         taxa = pd.DataFrame(np.arange(len(table.columns)), index=table.columns)
         # TODO : allow for summary type
-        diff = ancombc(table, metadata, taxa, formula='labels')
-        res = pearsonr(diff['beta'].values.ravel(),
+        diff = ancombc(table, metadata, formula='labels')
+        res = pearsonr(diff['labels_beta'].values.ravel(),
                        ground_truth.categorical.values.ravel())
 
         # test to see if there is a tight correlation
@@ -146,6 +146,31 @@ class TestAncombc(unittest.TestCase):
         self.assertGreater(res[0], 0.9)
         self.assertLess(res[1], 1e-10)
 
+    def test_ancomb_bc_error(self):
+        abs_table, rel_table, metadata, ground_truth = self.res
+
+        rel_table.index.name = 'sampleid'
+        metadata.index.name = 'sampleid'
+
+        table = rel_table
+        condition = 'microbe_total'
+        # Make sure that pandas treats the condition column as categorical, and
+        # not numeric (since the "labels" are just ints, pandas infers this as
+        # a numeric column) -- solution from
+        # https://stackoverflow.com/a/22006514/10730311
+        metadata[condition] = metadata[condition].astype(str)
+        # metadata[condition] is just a pandas Series, which we can use to
+        # create a qiime2.CategoricalMetadataColumn -- solution from
+        # https://github.com/qiime2/q2-composition/blob/master/q2_composition/tests/test_ancom.py#L34
+        metadata = qiime2.CategoricalMetadataColumn(metadata[condition])
+        mc_samples = 128
+        test = 't'
+        denom = 'all'
+        # make up some taxonomy
+        taxa = pd.DataFrame(np.arange(len(table.columns)), index=table.columns)
+
+        with self.assertRaises(ValueError):
+            ancombc(table, metadata, formula='microbe_total')
 
 if __name__ == "__main__":
     unittest.main()

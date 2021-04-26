@@ -2,7 +2,7 @@ from qiime2.plugin import (
     Bool, Str, Int, Float, Choices, Citations, Plugin, Metadata
 )
 from q2_types.feature_table import FeatureTable, Frequency
-from q2_types.feature_data import FeatureData, Differential, Taxonomy
+from q2_types.feature_data import FeatureData, Differential
 
 import q2_ancombc
 from q2_ancombc._method import ancombc
@@ -25,8 +25,7 @@ plugin.methods.register_function(
     function=ancombc,  # TODO: may want a better name...
     name=('Analysis Of Microbiomes with Bias Correction'),
     description=('Performs log-ratio transformation and statistical testing'),
-    inputs={'table': FeatureTable[Frequency],
-            'taxonomy' : FeatureData[Taxonomy]},
+    inputs={'table': FeatureTable[Frequency]},
     parameters={'metadata' : Metadata,
                 'formula' : Str,
                 'p_adj_method' : Str % Choices(['holm', 'hochberg', 'hommel', 
@@ -46,7 +45,6 @@ plugin.methods.register_function(
     outputs=[('differentials', FeatureData[Differential])],
     input_descriptions={
         'table': 'The feature table of abundances',
-        'taxonomy': 'Taxonomy path.'
     },
     parameter_descriptions={
                'metadata': 'Sample Metadata path.',
