@@ -113,5 +113,5 @@ def ancombc(table: pd.DataFrame,
         summary = pd.read_csv(summary_fp, index_col=0)
         
         # del summary['diff_abn']  # remove this field for now ...
-        # summary.index.name = "featureid"
+        summary.index.set_names("feature-id", inplace=True)
         return summary
