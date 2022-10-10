@@ -53,9 +53,8 @@ We can run ANCOM-BC using an R-style formula. In this case, we'll use the "label
 
 ```bash
 qiime ancombc ancombc \
-    --i-table example_data/table.qza \
-    --i-taxonomy example_data/taxonomy.qza \
-    --m-metadata-file example_data/metadata.txt \
+    --i-table table.qza \
+    --m-metadata-file metadata.txt \
     --p-formula "labels" \
     --o-differentials differentials.qza
 
@@ -65,8 +64,8 @@ This will output a single results file, `differentials.qza`, which contains the 
 
 ```bash
 qiime metadata tabulate \
- --i-input-file differentials.qza 
- --i-input-file taxonomy.qza \
+ --m-input-file differentials.qza \
+ --m-input-file taxonomy.qza \
  --o-visualization differentials.qzv
 ```
 
