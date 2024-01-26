@@ -1,6 +1,8 @@
 # q2-ANCOMBC
 qiime2 plugin for ANCOMBC
 
+**Note** this has now been migrated to the [q2-composition package](https://github.com/qiime2/q2-composition)
+
 # Installation
 
 Make sure you have qiime2 installed according to the [installation instruction](). Once you have the conda enviroment activated, open R by running
