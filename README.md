@@ -1,7 +1,14 @@
-# q2-ANCOMBC
-qiime2 plugin for ANCOMBC
+**This plugin has been replaced with functionality in the [`q2-composition`](https://github.com/qiime2/q2-composition) plugin.
+You should now access ANCOM-BC in QIIME 2 through the q2-composition plugin that is included in the QIIME 2 `amplicon` distribution.
+You do not need to install this plugin to use ANCOM-BC through QIIME 2.**
 
-**Note** this has now been migrated to the [q2-composition package](https://github.com/qiime2/q2-composition)
+As of February 2024, you can find instructions for using ANCOM-BC in QIIME 2 in the [*Mpving Pictures* tutorial](https://docs.qiime2.org/2024.2/tutorials/moving-pictures/#differential-abundance-testing-with-ancom-bc).
+
+
+The original README text for this repository follows.
+---
+
+# q2-ANCOMBC
 
 # Installation
 
